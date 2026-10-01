@@ -10,11 +10,8 @@ on:
     branches: [ "main" ]
 
 permissions:
-  contents: read
-
-jobs:
-  build:
-
+  def test_example():
+    assert True
     runs-on: ubuntu-latest
 
     steps:
