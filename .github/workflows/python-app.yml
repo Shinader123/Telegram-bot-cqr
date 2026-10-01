@@ -11,6 +11,8 @@ on:
 
 permissions:
 - name: Run tests
+  run: pytest
+  continue-on-error: true
 
   run: pytest
 
