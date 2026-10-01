@@ -10,9 +10,11 @@ on:
     branches: [ "main" ]
 
 permissions:
-  def test_example():
-    assert True
-    runs-on: ubuntu-latest
+ - name: Install pytest
+  run: pip install pytest
+
+- name: Run tests
+  run: pytest
 
     steps:
     - uses: actions/checkout@v4
